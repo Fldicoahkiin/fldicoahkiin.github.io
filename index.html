@@ -25,7 +25,7 @@
 		
 		@media screen and (orientation: landscape) {
 			.container a {
-				font-size: 5vw;
+				font-size: 10vw;
 				writing-mode: horizontal-tb;
 				transform: none;
 			}
@@ -41,7 +41,7 @@
 			const width = window.innerWidth;
 			const height = window.innerHeight;
 			const aspectRatio = width / height;
-			if (aspectRatio >= 1) {
+			if (aspectRatio >= 2/3) {
 				document.documentElement.style.setProperty('--text-orientation', 'horizontal');
 			} else {
 				document.documentElement.style.setProperty('--text-orientation', 'vertical');

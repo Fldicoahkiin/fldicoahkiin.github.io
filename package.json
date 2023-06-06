@@ -12,6 +12,7 @@
     "version": "6.3.0"
   },
   "dependencies": {
+    "gitalk": "^1.8.0",
     "hexo": "^6.3.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^4.0.0",
@@ -24,6 +25,7 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0"
+    "hexo-theme-landscape": "^1.0.0",
+    "valine": "^1.5.1"
   }
 }

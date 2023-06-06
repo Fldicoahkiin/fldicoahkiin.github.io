@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一个没事闲的蛋疼的网站
+title: 赟赟可爱捏
 subtitle: 'Fldicoahkiin'
 description: '嗯~ o(*￣▽￣*)o'
 keywords: NTR
@@ -46,12 +46,12 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: true
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''

@@ -1,5 +1,5 @@
 ---
-title: '独立页面'
+title: 'About'
 permalink: /about/
 comments: false
 post-info: false

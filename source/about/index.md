@@ -10,7 +10,7 @@ reward: false
 
 About是怎么回事呢？About相信大家都很熟悉，但是About是怎么回事呢？下面就让小编带大家一起了解吧。
 
-![233](https://i.pximg.net/img-original/img/2022/12/19/01/00/33/103719780_p0.jpg)
+![233](https://pixiv.cat/106956805.jpg)
 
 <!-- more -->
 

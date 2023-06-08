@@ -1628,39 +1628,51 @@ main:not(.up) .search #search-header input {
     width: 100%;
   }
 }
-.search .navItem:not(#search-header) {
-  transform: translateX(-100%);
-}
-.search-popup {
-  left: 0;
-  transform: translateX(-100%);
-}
-.search-popup.open {
-  transform: translateX(0);
+@media (max-width: 1023px) {
+  .search .navItem:not(#search-header) {
+    transform: translateX(-100%);
+  }
 }
 @media (min-width: 769px) and (max-width: 1023px) {
-  .up :is(#search-header,
-  .search-popup) {
+  .up #search-header {
     left: calc(100vw - 238px);
   }
-  :is(.up,
-  .moving) header {
-    clip-path: polygon(0 0, 0 100%, calc(100vw - 238px) 100%, calc(100vw - 238px) 0);
+  .up .search-popup {
+    right: 6px;
+    transform: translateX(6px);
+    left: calc(100vw - 6px);
+  }
+  .up .search-popup.open {
+    transform: translateX(-100%);
+  }
+  header {
+    clip-path: polygon(0 0, 0 100%, 100vw 100%, 100vw 0);
+  }
+  .search-popup {
+    left: 238px;
   }
 }
 @media (min-width: 1024px) {
-  #search-header input {
-    padding: 0 0 0 10px;
+  .search .navItem:not(#search-header) {
+    transform: translateX(100%);
   }
-  #search-header input::placeholder {
-    text-align: right;
+  .search-popup {
+    right: 6px;
+    transform: translateX(100%);
+  }
+  .search-popup.open {
+    transform: translateX(0);
+  }
+  #search-header input {
+    padding: 0 10px 0 0;
   }
   #search-header .navItemTitle {
-    padding-right: 10px;
+    padding-left: 10px;
+    right: 10px;
   }
   #search-header .navItemTitle::before {
-    border-left: 4px solid var(--theme-border-light);
-    left: 0;
+    border-right: 4px solid var(--theme-border-light);
+    right: 0;
   }
 }
 #valine {
@@ -2106,32 +2118,44 @@ main:not(.up) .search #search-header input {
 .lg-container.lg-container.lg-container .lg-icon) {
   cursor: var(--dark-cursor) 3 3, grab;
 }
+aside {
+  order: -1;
+}
+header {
+  order: 1;
+}
 @media (min-width: 769px) {
   header {
-    left: 0;
+    left: 238px;
+  }
+  .navBtn {
+    left: 1em;
   }
   aside {
-    right: 0;
+    left: 0;
   }
 }
 @media (min-width: 992px, max-width 1919px) {
   aside {
-    padding: 0 25px 0 15px;
+    padding: 0 15px 0 25px;
   }
 }
 @media (min-width: 1024px) {
+  header {
+    left: unset;
+    right: 0;
+  }
   .navContent {
+    display: flex;
+    flex-direction: column;
     transform: unset;
   }
   .navItem {
-    padding-left: 1.2em;
-  }
-  .navBlock {
-    text-align: right;
+    align-self: end;
+    padding-right: 1.2em;
   }
   .navBlock .navItemTitle::before {
-    border-left: 4px solid;
-    left: 0;
+    border-right: 4px solid;
   }
   .navContent:not(.search) .navBlock::before {
     content: "";
@@ -2139,41 +2163,41 @@ main:not(.up) .search #search-header input {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 2em;
+    right: 2em;
   }
   .navContent:not(.search) .navBlock:hover>.navItemTitle {
-    margin-left: 1em;
+    margin-left: -1em;
   }
   .navContent:not(.search) .navBlock>.navItemList {
-    left: calc(100% + 2em);
+    right: calc(100% + 2em);
   }
   .navItemList {
-    left: 100%;
+    right: 100%;
   }
   .navItemList .navItem {
-    padding-right: 1px;
+    padding-left: 1px;
   }
   .navItemList .navItemTitle {
-    padding-left: 0.8em;
-    padding-right: 0.5em;
+    padding-right: 0.8em;
+    padding-left: 0.5em;
   }
   .navItemList>.navItem>.navItemTitle:hover {
-    padding-left: 1.8em;
+    padding-right: 1.8em;
   }
 }
 @media (min-width: 1440px) {
   .navItem {
-    padding-left: 2.25em;
+    padding-right: 2.25em;
   }
   aside {
-    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media (min-width: 1920px) {
   .navItem {
-    padding-left: 5.25em;
+    padding-right: 5.25em;
   }
-  aside {
+  article {
     margin: 0 2.5%;
   }
 }

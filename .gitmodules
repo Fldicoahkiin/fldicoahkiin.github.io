@@ -1,0 +1,3 @@
+[submodule "arknight"]
+    path = themes/arknights
+    url = https://github.com/Fldicoahkiin/hexo-theme-arknights.git

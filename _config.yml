@@ -6,14 +6,15 @@
 title: 赟赟可爱捏
 subtitle: 'Fldicoahkiin'
 description: '嗯~ o(*￣▽￣*)o'
-keywords: NTR
-author: Fldicoahkiin
+keywords:
+author: Dr.Fldicoahkiin
 language: zh-CN
-timezone: 'Asia'
+timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://fldicoahkiin.github.io/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -46,15 +47,24 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: true
 prismjs:
-  enable: true
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
+mathjax:
+  tags: none # or 'ams' or 'all'
+  single_dollars: true # enable single dollar signs as in-line math delimiters
+  cjk_width: 0.9 # relative CJK char width
+  normal_width: 0.6 # relative normal (monospace) width
+  append_css: true # add CSS to every page
+  every_page: false # if true, every page will be rendered by mathjax regardless the `mathjax` setting in Front-matter of each article
+aplayer:
+  meting: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -99,9 +109,30 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: arknights
 
+render:
+  ts:
+    target: ES2015
+    removeComments: true
+    newLine: Lf
+    pretty: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: https://github.com/Fldicoahkiin/fldicoahkiin.github.io
   branch: [gh-pages]
+
+# Security
+encrypt: # hexo-blog-encrypt
+  enable: true
+  abstract: 与 Rhodes Island™ 取得弱神经连接时需要口令
+  message: 请输入与 Rhodes Island™ 取得弱神经连接时的口令：
+  wrong_pass_message: 与 Rhodes Island™ 效验口令失败，请重试。
+  wrong_hash_message: 与 Rhodes Island™ 效验口令失败，当前使用临时权限查看。
+
+search:
+  enable: true
+  preload: true # 非必要
+  path: search.json # 非必要，缩小文件用
+  format: striptags # 非必要，缩小文件用（该选项能极大缩小搜索数据文件大小，建议开启）

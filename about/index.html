@@ -54,8 +54,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
     var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
     
-    timeDate.innerHTML = "本站已运行:" + days + " 天";
-    times.innerHTML = hours + " 时" + minutes + " 分" + seconds + " 秒";
+    timeDate.innerHTML = "本站已运行:" + days + " 天 ";
+    times.innerHTML = hours + "时 " + minutes + "分 " + seconds + "秒";
   }
   
   setInterval(updateTime, 1000);

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About | 赟赟可爱捏</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><script>var config = {"root":"/","search":{"preload":true,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><script>MathJax.Hub.Config({
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About | 赟赟可爱捏</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><script>var config = {"root":"/","search":{"preload":true,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><link rel="stylesheet" href="//unpkg.com/@waline/client@v2/dist/waline.css"><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><script>MathJax.Hub.Config({
  menuSettings: {
    zoom: "None"
  },
@@ -59,12 +59,15 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
   }
   
   setInterval(updateTime, 1000);
-});</script></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {new Valine({
- el: '#valine'
- , appId: 'z56glGn3Hu6U4d6gkCS62Miw-MdYXbMMI'
- , appKey: 'zLXJHLUPKHYgLsy3xRbTuRVg', serverURLs: 'https://z56glgn3.api.lncldglobal.com' , placeholder: 'This comment is sent by Penguin Logistics.'
- , path: window.location.pathname
-});code.findCode();
+});</script></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script type="module">import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+window.waline = init;
+</script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {if (document.querySelector('#waline'))
+ waline({
+   el: '#waline',
+   dark: ':root[theme-mode="dark"]',
+   serverURL: 'https://fldicoahkiin-github-io-vercel-server.vercel.app/',
+   path: window.location.pathname,
+ });code.findCode();
 document.querySelector('.lg-container')?.remove()
 lightGallery(document.getElementById('post-bg'), {
   plugins: [lgZoom,lgThumbnail],

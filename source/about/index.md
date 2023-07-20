@@ -52,7 +52,7 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 
   <div class="code-tail-container">
     <div class="code">
-      访问人数喵:</br>
+      访问次数喵:</br>
     </div>
     <div class="tail">
       <img src="https://counter.likepoems.com/get/@:Fldicoahkiin.github.io" alt=":Fldicoahkiin.github.io" />

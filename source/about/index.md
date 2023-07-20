@@ -15,7 +15,7 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 [//]: ![233](img/106956805_p0.png)
 
 <!-- markdownlint-disable MD033 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
 <style>
   .container {
     display: flex;

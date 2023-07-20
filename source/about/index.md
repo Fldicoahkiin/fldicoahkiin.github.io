@@ -16,41 +16,47 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 
 <!-- markdownlint-disable MD033 -->
 <style>
-    .container {
-      display: flex;
-    }
+  .container {
+    display: flex;
+    align-items: center;
+  }
 
-    .image {
-      flex: 1;
-    }
+  .image {
+    flex: 1;
+    max-width: 384px;
+    max-height: 576px;
+  }
 
-    .code {
-      flex: 1;
-      padding-left: 20px;
-    }
+  .code-tail-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .code pre {
-      background-color: #f7f7f7;
-      padding: 10px;
-      border: 1px solid #ccc;
-      font-family: 'Courier New', Courier, monospace;
-      line-height: 1.5;
-      overflow: auto;
-    }
+  .code {
+    margin-bottom: 10px;
+    font-size: 75px;
+  }
+
+  .tail {
+    transform: scale(1);
+  }
 </style>
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=2UesZOEM-gl3eIuKAz4ordY-2ZYjreM9x-CwSPS7kcA&cl=ffffff&w=a"></script>
-
 <div class="container">
-  
   <div class="image">
     <img src="https://pixiv.cat/106956805.jpg" alt="233" width="384" height="576">
   </div>
 
-  <a href="https://clustrmaps.com/site/1bvp2"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=2UesZOEM-gl3eIuKAz4ordY-2ZYjreM9x-CwSPS7kcA&cl=ffffff" /></a>
-
-  <div class="code">
-    <a href="https://ipw.cn/ipv6webcheck/?site=fldicoahkiin.github.io" title="本站支持IPv6访问" target="_blank"><img style="display:inline-block;vertical-align:middle" alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s4.svg"></a>
+  <div class="code-tail-container">
+    <div class="code">
+      访问人数喵:</br>
+    </div>
+    <div class="tail">
+      <img src="https://counter.likepoems.com/get/@:Fldicoahkiin.github.io" alt=":Fldicoahkiin.github.io" />
+    </div>
   </div>
 </div>
 

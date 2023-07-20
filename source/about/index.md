@@ -15,7 +15,7 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 [//]: ![233](img/106956805_p0.png)
 
 <!-- markdownlint-disable MD033 -->
-<script async src="//githubcdn.qiushaocloud.top/gh/qiushaocloud/site-counter@master/dist/qiushaocloud_site_counter.min.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <style>
   .container {
     display: flex;
@@ -58,8 +58,8 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
     <div class="tail">
       <img src="https://counter.likepoems.com/get/@:Fldicoahkiin.github.io" alt=":Fldicoahkiin.github.io" />
     </div>
-    <p>总访问量: <span id="qiushaocloud_sitecounter_value_site_pv">n</span></p>
-    <p>总访客量: <span id="qiushaocloud_sitecounter_value_site_uv">n</span></p>
+    <p>总访问量: <span id="busuanzi_value_site_pv"></span>次</p>
+    <p>总访客量: <span id="busuanzi_value_site_uv"></span>次</p>
   </div>
 </div>
 

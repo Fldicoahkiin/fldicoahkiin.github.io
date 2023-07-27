@@ -15,7 +15,6 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 [//]: ![233](img/106956805_p0.png)
 
 <!-- markdownlint-disable MD033 -->
-<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
 <style>
   .container {
     display: flex;
@@ -24,8 +23,8 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 
   .image {
     flex: 1;
-    max-width: 384px;
-    max-height: 576px;
+    object-fit: contain;
+    width: 50%;
   }
 
   .code-tail-container {
@@ -38,7 +37,12 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 
   .code {
     margin-bottom: 10px;
-    font-size: 75px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vw);
+    width: 100%;
   }
 
   .tail {
@@ -48,19 +52,41 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
 
 <div class="container">
   <div class="image">
-    <img src="https://pixiv.cat/106956805.jpg" alt="233" width="384" height="576">
+    <img id="image" src="https://pixiv.cat/106956805.jpg" alt="233">
   </div>
 
   <div class="code-tail-container">
     <div class="code">
-      访问次数喵:</br>
+      访问次数喵:
     </div>
     <div class="tail">
       <img src="https://counter.likepoems.com/get/@:Fldicoahkiin.github.io" alt=":Fldicoahkiin.github.io" />
     </div>
-    <p>总访问量: <span id="busuanzi_value_site_pv"></span>次</p>
-    <p>总访客量: <span id="busuanzi_value_site_uv"></span>次</p>
   </div>
 </div>
+
+<script>
+  function adjustLayout() {
+    const container = document.querySelector('.container');
+    const image = document.getElementById('image');
+
+    if (container && image) {
+      const containerWidth = container.offsetWidth;
+      const imageWidth = image.naturalWidth;
+
+      if (containerWidth < imageWidth) {
+        image.style.width = '100%';
+        document.querySelector('.code').style.fontSize = 'calc(10px + 2vw)';
+      } else {
+        image.style.width = '50%';
+      }
+    }
+  }
+
+  // 当页面加载完毕和窗口大小改变时重新调整布局
+  window.addEventListener('DOMContentLoaded', adjustLayout);
+  window.addEventListener('resize', adjustLayout);
+</script>
+<!-- markdownlint-disable MD033 -->
 
 About，其实就是About了。那么About为什么会About，相信大家都很好奇是怎么回事。大家可能会感到很惊讶，About怎么会About呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于About的事情了，大家有没有觉得很神奇呢？

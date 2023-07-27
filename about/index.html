@@ -15,7 +15,7 @@
    inlineMath: [["\\(", "\\)"]],
    displayMath: [["\\[", "\\]"]]
  }
-});</script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/brands.min.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/fontawesome.min.css"><link rel="stylesheet" href="/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+});</script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/brands.min.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/fontawesome.min.css"><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/atom-one-dark-reasonable.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
 if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
  font-family: BenderLight;
  src: local('Bender'), url("/font/BenderLight.ttf");
@@ -38,7 +38,6 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <span id="more"></span>
 
 <!-- markdownlint-disable MD033 -->
-<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
 <style>
   .container {
     display: flex;
@@ -47,8 +46,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 
   .image {
     flex: 1;
-    max-width: 384px;
-    max-height: 576px;
+    object-fit: contain;
+    width: 50%;
   }
 
   .code-tail-container {
@@ -61,7 +60,12 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 
   .code {
     margin-bottom: 10px;
-    font-size: 75px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vw);
+    width: 100%;
   }
 
   .tail {
@@ -70,19 +74,41 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 </style>
 
 <div class="container">
-  <div class="image" class='item-img' data-src='https://pixiv.cat/106956805.jpg'><img src="https://pixiv.cat/106956805.jpg" alt="233" width="384" height="576">
+  <div class="image" class='item-img' data-src='https://pixiv.cat/106956805.jpg'><img id="image" src="https://pixiv.cat/106956805.jpg" alt="233">
   </div>
 
   <div class="code-tail-container">
     <div class="code">
-      访问次数喵:</br>
+      访问次数喵:
     </div>
     <div class="tail" class='item-img' data-src='https://counter.likepoems.com/get/@:Fldicoahkiin.github.io'><img src="https://counter.likepoems.com/get/@:Fldicoahkiin.github.io" alt=":Fldicoahkiin.github.io" />
     </div>
-    <p>总访问量: <span id="busuanzi_value_site_pv"></span>次</p>
-    <p>总访客量: <span id="busuanzi_value_site_uv"></span>次</p>
   </div>
 </div>
+
+<script>
+  function adjustLayout() {
+    const container = document.querySelector('.container');
+    const image = document.getElementById('image');
+
+    if (container && image) {
+      const containerWidth = container.offsetWidth;
+      const imageWidth = image.naturalWidth;
+
+      if (containerWidth < imageWidth) {
+        image.style.width = '100%';
+        document.querySelector('.code').style.fontSize = 'calc(10px + 2vw)';
+      } else {
+        image.style.width = '50%';
+      }
+    }
+  }
+
+  // 当页面加载完毕和窗口大小改变时重新调整布局
+  window.addEventListener('DOMContentLoaded', adjustLayout);
+  window.addEventListener('resize', adjustLayout);
+</script>
+<!-- markdownlint-disable MD033 -->
 
 <p>About，其实就是About了。那么About为什么会About，相信大家都很好奇是怎么回事。大家可能会感到很惊讶，About怎么会About呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于About的事情了，大家有没有觉得很神奇呢？</p>
 <div id="paginator"></div></div><div id="post-footer"></div></div><div class="bottom-btn"><div><a id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧</a><a id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/4.png" alt="Logo"></a><h1 id="Dr"><a target="_blank" rel="noopener" href="https://github.com/Fldicoahkiin">Flacier</a></h1><div id="description"><p>嗯~ o(*￣▽￣*)o</p></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#About"><span class="toc-number">1.</span> <span class="toc-text">About</span></a></li></ol></div><section id="total"><a id="total-archives" href="/archives"><span class="total-title">文章 总数:</span><span class="total-number">1</span></a><div id="total-tags"><span class="total-title">标签:</span><span class="total-number">1</span></div><div id="total-categories"><span class="total-title">分类:</span><span class="total-number">1</span></div></section></div><footer><nobr><span class="text-title">©</span><span class="text-content">2023-2077</span></nobr><br><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr><div id="Running_Time"></div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span><script>document.addEventListener('DOMContentLoaded', function(){
@@ -107,7 +133,7 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
   setInterval(updateTime, 1000);
 });</script></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script type="module">import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 window.waline = init;
-</script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {if (document.querySelector('#waline'))
+</script><script src="//unpkg.com/@highlightjs/cdn-assets@11.4.0/highlight.min.js"></script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {if (document.querySelector('#waline'))
  waline({
    el: '#waline',
    dark: ':root[theme-mode="dark"]',

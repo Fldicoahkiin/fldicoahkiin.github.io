@@ -1,5 +1,6 @@
 ---
 title: 'About'
+date: 2023-06-08 8:30:00
 permalink: /about/
 comments: false
 post-info: false

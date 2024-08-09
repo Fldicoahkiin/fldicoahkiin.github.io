@@ -27,8 +27,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       hexo-generator-index:
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^4.0.0
+        version: 4.0.0
       hexo-generator-tag:
         specifier: ^2.0.0
         version: 2.0.0
@@ -57,8 +57,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       valine:
-        specifier: ^1.5.1
-        version: 1.5.1
+        specifier: ^1.5.2
+        version: 1.5.2
 
 packages:
 
@@ -1340,9 +1340,9 @@ packages:
     resolution: {integrity: sha512-9OduRBf3WeRDa4BR0kAfRjOVHur7v3fm0NKAwbjUiqULigAdNZVZPO3cHKW2MlBbl/lI5PuWdhQ9zZ99CCCAgQ==}
     engines: {node: '>=14'}
 
-  hexo-generator-index@3.0.0:
-    resolution: {integrity: sha512-83AuNN4cWdLVi//3ugR8E3kR6rrOwhXZt+hOCm1IjtIGj353/GlrtpMHpqZHU5kqipzj4miy9dweVdukXglVWw==}
-    engines: {node: '>=14'}
+  hexo-generator-index@4.0.0:
+    resolution: {integrity: sha512-KeM7mOCKWINGFAk1E+CkjMMgqFIv8oaRbGxR7ipkQAp44o4aopkVftma4sdIplOq9WQEWfVYDUK5gEv9J3nzUg==}
+    engines: {node: '>=18'}
 
   hexo-generator-tag@2.0.0:
     resolution: {integrity: sha512-1px/hF3veEohWDN8jjzchQhaiz+uOStUvvMaBJC9vWOlALh30UFcapL8IrvAwwJZjFRVA+WqGgDRqoQ8+yaaFw==}
@@ -3174,8 +3174,8 @@ packages:
   validate-npm-package-name@3.0.0:
     resolution: {integrity: sha512-M6w37eVCMMouJ9V/sdPGnC5H4uDr73/+xdq0FBLO3TFFX1+7wiUY6Es328NN+y43tmY+doUdN9g9J21vqB7iLw==}
 
-  valine@1.5.1:
-    resolution: {integrity: sha512-uT9tHuoKkFUqqVHHRyz4EPe8U+h1ZkCa2lVKH8SKZM9r1Whm8DZW9GfrK4USmLJ+QwpHWenPIKOH0s2xO0BVbQ==}
+  valine@1.5.2:
+    resolution: {integrity: sha512-KJwt4V0nr7NU4PT/J6bNiFJBcK8oRNKSmPTAYrI77WxggMugoRUqFBVFPLP35xvcg4mPnas4s+cBgW55lqt1KA==}
 
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
@@ -4860,7 +4860,7 @@ snapshots:
     dependencies:
       hexo-pagination: 3.0.0
 
-  hexo-generator-index@3.0.0:
+  hexo-generator-index@4.0.0:
     dependencies:
       hexo-pagination: 3.0.0
 
@@ -7076,7 +7076,7 @@ snapshots:
     dependencies:
       builtins: 1.0.3
 
-  valine@1.5.1:
+  valine@1.5.2:
     dependencies:
       autosize: 4.0.4
       balajs: 1.0.10

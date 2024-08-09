@@ -60,7 +60,8 @@ About是怎么回事呢？About相信大家都很熟悉，但是About是怎么�
       访问次数喵:
     </div>
     <div class="tail">
-      <img src="https://counter.likepoems.com/get/@:Fldicoahkiin.github.io" alt=":Fldicoahkiin.github.io" />
+          挂掉了喵
+<!--      <img src="https://counter.likepoems.com/get/@:Fldicoahkiin.github.io" alt=":Fldicoahkiin.github.io" /> -->
     </div>
   </div>
 </div>

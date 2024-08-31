@@ -122,7 +122,6 @@ deploy:
   type: git
   repo: https://github.com/Fldicoahkiin/fldicoahkiin.github.io
   branch: [gh-pages]
-  message: [Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}]
 
 # Security
 encrypt: # hexo-blog-encrypt

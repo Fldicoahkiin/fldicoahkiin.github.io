@@ -18,6 +18,8 @@ tags: 网络
 
 ## 查询类
 
+- [Web Check](https://web-check.xyz/) 综合
+
 - [Scamalytics](https://scamalytics.com/) IP纯净度
 
 - [17CE](https://www.17ce.com/) 连通性

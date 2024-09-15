@@ -12,6 +12,8 @@ tags: 网络
 
 - [Cover Your Tracks](https://coveryourtracks.eff.org/) 综合
 
+- [UA检测-HTTP](https://ua.233996.xyz/) UA
+
 - [What is MyIPaddress](https://whatismyipaddress.com/) IP
 
 - [WHOER.NET](https://whoer.net/) IP

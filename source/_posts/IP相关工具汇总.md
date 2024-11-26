@@ -20,15 +20,19 @@ tags: 网络
 
 ## 查询类
 
-- **Web Check** [https://web-check.xyz](https://web-check.xyz/) 综合
+- **Web Check** [https://web-check.xyz](https://web-check.xyz/) *综合*
 
-- **Scamalytics** [https://scamalytics.com](https://scamalytics.com/) IP纯净度
+- **ICP/IP地址/域名信息备案管理系统** [https://beian.miit.gov.cn/](https://beian.miit.gov.cn/) *备案*
 
-- **17CE** [https://www.17ce.com](https://www.17ce.com/) 连通性
+- **FOFA网络空间测绘系统漏洞收集平台** [https://fofa.info/](https://fofa.info/) *漏洞*
 
-- **ping.pe** [https://ping.pe](https://ping.pe/) 连通性
+- **Scamalytics** [https://scamalytics.com](https://scamalytics.com/) *IP纯净度*
 
-- **IPChecker检查IP是否被封** [https://www.vps234.com/ipchecker](https://www.vps234.com/ipchecker/) 连通性
+- **17CE** [https://www.17ce.com](https://www.17ce.com/) *连通性*
+
+- **ping.pe** [https://ping.pe](https://ping.pe/) *连通性*
+
+- **IPChecker检查IP是否被封** [https://www.vps234.com/ipchecker](https://www.vps234.com/ipchecker/) *连通性*
 
 ## 测速类
 

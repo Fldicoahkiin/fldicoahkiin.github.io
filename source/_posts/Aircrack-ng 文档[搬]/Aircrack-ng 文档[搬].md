@@ -6,30 +6,32 @@ tags: code
 
 ## Airbase-ng
 
-### Description
+搬自官方文档
 
-This documentation is still under development. There is quite a bit more work to be done on this documentation. Please post any comments or suggestions to [this thread in the Forum](http://forum.aircrack-ng.org/index.php?topic=3247.0).
+### 描述
 
-Airbase-ng is a multi-purpose tool aimed at attacking clients as opposed to the Access Point (AP) itself. Since it is so versatile and flexible, summarizing it is a challenge. Here are some of the feature highlights:
+此文档仍在开发中。还有很多工作要做。请将任何评论或建议发布到[论坛中的这个帖子](http://forum.aircrack-ng.org/index.php?topic=3247.0)。
 
-- Implements the Caffe Latte WEP client attack
-- Implements the Hirte WEP client attack
-- Ability to cause the WPA/WPA2 handshake to be captured
-- Ability to act as an ad-hoc Access Point
-- Ability to act as a full Access Point
-- Ability to filter by SSID or client MAC addresses
-- Ability to manipulate and resend packets
-- Ability to encrypt sent packets and decrypt received packets
+Airbase-ng 是一个多用途工具，旨在攻击客户端而不是接入点（AP）本身。由于它非常多功能和灵活，总结它是一个挑战。以下是一些功能亮点：
 
-The main idea is of the implementation is that it should encourage clients to associate with the fake AP, not prevent them from accessing the real AP.
+- 实现了 Caffe Latte WEP 客户端攻击
+- 实现了 Hirte WEP 客户端攻击
+- 能够捕获 WPA/WPA2 握手
+- 能够充当临时接入点
+- 能够充当完整的接入点
+- 能够按 SSID 或客户端 MAC 地址进行过滤
+- 能够操纵和重发数据包
+- 能够加密发送的数据包和解密接收的数据包
 
-A tap interface (atX) is created when airbase-ng is run. This can be used to receive decrypted packets or to send encrypted packets.
+主要思想是鼓励客户端与假 AP 关联，而不是阻止它们访问真实 AP。
 
-As real clients will most probably send probe requests for common/configured networks, these frames are important for binding a client to our softAP. In this case, the AP will respond to any probe request with a proper probe response, which tells the client to authenticate to the airbase-ng BSSID. That being said, this mode could possibly disrupt the correct functionality of many APs on the same channel.
+运行 airbase-ng 时会创建一个 tap 接口（atX）。这可以用来接收解密的数据包或发送加密的数据包。
 
-WARNING: airbase-ng can easily disrupt Access Points around you. Where possible, use filters to minimize this possibility. Always act responsibly and do not disrupt networks which do not belong to you.
+由于真实客户端很可能会发送常见/配置网络的探测请求，这些帧对于将客户端绑定到我们的 softAP 很重要。在这种情况下，AP 将对任何探测请求做出适当的探测响应，告诉客户端认证到 airbase-ng BSSID。也就是说，这种模式可能会干扰同一频道上许多 AP 的正常功能。
 
-### Usage
+警告：airbase-ng 很容易干扰周围的接入点。尽可能使用过滤器以减少这种可能性。始终负责任地行事，不要干扰不属于您的网络。
+
+### 用法
 
 usage: airbase-ng \<options> \<replay interface>
 

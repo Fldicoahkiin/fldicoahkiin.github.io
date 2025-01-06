@@ -38,7 +38,7 @@ tags: 网络
 
 ## 自我检测类
 
-- **PING0**[http://ping0.cc](http://ping0.cc/) IP纯净度
+- **PING0** [http://ping0.cc](http://ping0.cc/) IP纯净度
 
 - **IPCheck.ing** [https://ipcheck.ing](https://ipcheck.ing/) 综合
 
